@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "87c54ba8-7a3e-4293-9c94-156ddf8de121",
+		"name": "WhatBytes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29501493"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Yoganand\",\r\n  \"email\": \"Yoganand@example.com\",\r\n  \"password\": \"Yoga@1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"Yoganand@example.com\",\r\n  \"password\": \"Yoga@1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllUsers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserbyId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users/cm6jt8myc0000ur8w0zoog816",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"cm6jt8myc0000ur8w0zoog816"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUserbyid",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Yoganand Updated\",\r\n  \"email\": \"Yoganand@example.com\",\r\n  \"password\": \"Yoga@1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/cm6jt8myc0000ur8w0zoog816",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"cm6jt8myc0000ur8w0zoog816"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleteuserbyid",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users/cm6jtej8e0001ur8wsj7hf2wy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"cm6jtej8e0001ur8wsj7hf2wy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProject",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"New Project 2\",\r\n  \"description\": \"Description of the project\",\r\n  \"status\": \"PLANNED\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/projects/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"projects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProject",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/projects/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"projects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProjectbyid",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Project Name 2\",\r\n  \"description\": \"Updated project description 2\",\r\n  \"status\": \"ONGOING\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/projects/84497d98-6443-4c9d-8a94-49b91e49308c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"projects",
+						"84497d98-6443-4c9d-8a94-49b91e49308c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProjectbyid",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/projects/ead82f40-27dd-483d-9a7d-d3edcc65713d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"projects",
+						"ead82f40-27dd-483d-9a7d-d3edcc65713d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTask",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"New Task 1\",\r\n  \"description\": \"Task description 1\",\r\n  \"status\": \"TODO\",\r\n  \"assignedUserId\": \"cm6jqztm40001ur9809kei39z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/projects/84497d98-6443-4c9d-8a94-49b91e49308c/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"projects",
+						"84497d98-6443-4c9d-8a94-49b91e49308c",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/projects/84497d98-6443-4c9d-8a94-49b91e49308c/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"projects",
+						"84497d98-6443-4c9d-8a94-49b91e49308c",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTaskById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Task Title 2\",\r\n  \"description\": \"Updated task description 2\" ,\r\n  \"status\": \"IN_PROGRESS\",\r\n  \"assignedUserId\": \"cm6jqztm40001ur9809kei39z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/e05fcee8-5525-4ed7-bdd5-a74d14cc90d3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"e05fcee8-5525-4ed7-bdd5-a74d14cc90d3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletetaskById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/876a943d-9cc2-4bf3-a9ba-7852ed73dc43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"876a943d-9cc2-4bf3-a9ba-7852ed73dc43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtertaskbystatusanduserid",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtNmp0OG15YzAwMDB1cjh3MHpvb2c4MTYiLCJlbWFpbCI6IllvZ2FuYW5kQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MjcwMjkzLCJleHAiOjE3MzgyNzM4OTN9.wxNZ8dxpMTjIVECaNdykWGzSdcejza7ig0zef66-4FA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks?status=IN_PROGRESS&assignedUserId=cm6jqztm40001ur9809kei39z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "IN_PROGRESS"
+						},
+						{
+							"key": "assignedUserId",
+							"value": "cm6jqztm40001ur9809kei39z"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
