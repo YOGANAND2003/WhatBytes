@@ -3,6 +3,11 @@
 
 This is a task management application that allows users to create, Get, update, delete, and filter tasks associated with specific projects. The application supports authentication using JWT tokens and utilizes **Prisma** ORM for interacting with a PostgreSQL database.
 
+---
+## 🎥 Demo Video
+[https://www.loom.com/share/YOUR_VIDEO_ID](https://www.loom.com/share/62b7c8c5e8fc4490a341ef895a1fd9b3?sid=db7b8735-3f13-4914-8ae7-f11a8bb2e254]
+
+
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
 2. [Installation](#installation)
